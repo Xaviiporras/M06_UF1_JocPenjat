@@ -1,0 +1,112 @@
+body{
+    background-color: #BDC581;
+    font-family: "Roboto Slab", serif;
+}
+
+header > h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#divHeader{
+    display: flex;
+    justify-content: right;
+    height: 3vw;
+}
+
+#divHeader > *{
+    margin-right: 1vw;
+    border-radius: 6px;
+}
+#inputPalabra{
+    border-radius: 6px;
+}
+
+main{
+    padding-top: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#començarPartida{
+    background-color: #F8EFBA;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 90vw;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+#div_centre{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw 0vw 2vw 0vw;
+    width: 96vw;
+}
+
+#puntsJugador{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #d2bf54;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#puntsJugador2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #d2bf54;
+    margin-left: 2vw;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#puntsJugador > h3{
+    margin-left: 7.5vw;
+}
+#puntsJugador2 > h3{
+    margin-left: 7.5vw;
+}
+
+.textPunts{
+    font-size: 0.6em;
+    margin-left: 1vw;
+}
+.textPunts2{
+    font-size: 0.6em;
+    margin-left: 1vw;
+}
+
+#divMillorPartida{
+    display: flex;
+}
+
+
+#div_imatge{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20vw;
+    height: 19vw;
+    overflow: hidden;
+}
+
+#div_imatge > img {
+    width: 100%;
+    height: 100%; 
+}
+
+#div_botones > button{
+    background-color: #F8EFBA;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 4px;
+}

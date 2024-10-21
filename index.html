@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joc Penjat</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <header>
+        <h1>Juego del Ahorcado</h1>
+        <div id="divHeader">
+            <input type="password" id="inputPalabra" placeholder="Introdueix una paraula">
+            <img src="imagenes/view.png" alt="view" id="mostrar" onclick="mostrarParaula()">
+            <Button id="buttonEmpezar" onclick="empezarPartida()">Començar partida</Button>
+        </div>
+    </header>
+    <main>
+        <div id="començarPartida">
+            <h2 id="textInicial">Començar partida</h2>
+        </div>
+        <div id="div_centre">
+            <div id="puntsJugador">
+                <h3>Jugador 1</h3>
+                <div>
+                    <p class="textPunts">PUNTS PARTIDES ACTUALS</p>
+                    <p class="textPunts" id="puntsActuals">0</p>
+                </div>
+                <div>
+                    <p class="textPunts">TOTAL PARTIDES</p>
+                    <p class="textPunts" id="partidesTotals">0</p>
+                </div>
+                <div>
+                    <p class="textPunts">PARTIDES GUANYADES</p>
+                    <p class="textPunts" id="partidesGuanyades">0</p>
+                </div>
+                <div>
+                    <p class="textPunts">PARTIDA AMB MÉS PUNTS:</p>
+                    <div id="divMillorPartida">
+                        <p class="textPunts" id="partidaMillorData"></p>
+                        <p class="textPunts" id="partidaMillorPunts"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="div_imatge">
+                <img id="imagenMuñeco" src="./imagenes/penjat_0.jpg" alt="imatge personatge 0">
+            </div>
+            <div id="puntsJugador2">
+                <h3>Jugador 2</h3>
+                <div>
+                    <p class="textPunts2">PUNTS PARTIDES ACTUALS</p>
+                    <p class="textPunts2" id="puntsActuals2">0</p>
+                </div>
+                <div>
+                    <p class="textPunts2">TOTAL PARTIDES</p>
+                    <p class="textPunts2" id="partidesTotals2">0</p>
+                </div>
+                <div>
+                    <p class="textPunts2">PARTIDES GUANYADES</p>
+                    <p class="textPunts2" id="partidesGuanyades2">0</p>
+                </div>
+                <div>
+                    <p class="textPunts2">PARTIDA AMB MÉS PUNTS:</p>
+                    <div id="divMillorPartida2">
+                        <p class="textPunts2" id="partidaMillorData2"></p>
+                        <p class="textPunts2" id="partidaMillorPunts2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="div_botones">
+            <button id="boto_1" disabled onclick="jugarLletra(this)">A</button>
+            <button id="boto_2" disabled onclick="jugarLletra(this)">B</button>
+            <button id="boto_3" disabled onclick="jugarLletra(this)">C</button>
+            <button id="boto_4" disabled onclick="jugarLletra(this)">D</button>
+            <button id="boto_5" disabled onclick="jugarLletra(this)">E</button>
+            <button id="boto_6" disabled onclick="jugarLletra(this)">F</button>
+            <button id="boto_7" disabled onclick="jugarLletra(this)">G</button>
+            <button id="boto_8" disabled onclick="jugarLletra(this)">H</button>
+            <button id="boto_9" disabled onclick="jugarLletra(this)">I</button>
+            <button id="boto_10" disabled onclick="jugarLletra(this)">J</button>
+            <button id="boto_11" disabled onclick="jugarLletra(this)">K</button>
+            <button id="boto_12" disabled onclick="jugarLletra(this)">L</button>
+            <button id="boto_13" disabled onclick="jugarLletra(this)">M</button>
+            <button id="boto_14" disabled onclick="jugarLletra(this)">N</button>
+            <button id="boto_15" disabled onclick="jugarLletra(this)">O</button>
+            <button id="boto_16" disabled onclick="jugarLletra(this)">P</button>
+            <button id="boto_17" disabled onclick="jugarLletra(this)">Q</button>
+            <button id="boto_18" disabled onclick="jugarLletra(this)">R</button>
+            <button id="boto_19" disabled onclick="jugarLletra(this)">S</button>
+            <button id="boto_20" disabled onclick="jugarLletra(this)">T</button>
+            <button id="boto_21" disabled onclick="jugarLletra(this)">U</button>
+            <button id="boto_22" disabled onclick="jugarLletra(this)">V</button>
+            <button id="boto_23" disabled onclick="jugarLletra(this)">W</button>
+            <button id="boto_24" disabled onclick="jugarLletra(this)">X</button>
+            <button id="boto_25" disabled onclick="jugarLletra(this)">Y</button>
+            <button id="boto_26" disabled onclick="jugarLletra(this)">Z</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script/exerciciPenjat.js"></script>
 </body>
+
 </html>
